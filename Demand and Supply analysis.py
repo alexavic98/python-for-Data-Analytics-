@@ -25,7 +25,7 @@ print(mean)
 np.where(df["Rides Completed"].isnull(),107, df["Rides Completed"])
 print(df)
 
-#Showing the relationship between the number of drivers active per hour and the number of riders active per hour
+#Showing the relationship between the number of drivers active per hour and the number of rides active per hour
 demand = df["Riders Active Per Hour"]
 supply = df["Drivers Active Per Hour"]
 plt.scatter(demand, supply)
